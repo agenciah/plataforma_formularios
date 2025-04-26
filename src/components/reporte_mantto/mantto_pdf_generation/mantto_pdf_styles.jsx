@@ -3,7 +3,7 @@ export const manttoPdfStyles = {
     title: {
       text: 'Checklist de Supervisión',
       x: 10,
-      y: 50,
+      y: 60,
       fontSize: 16,
       fontStyle: 'bold',
       color: '#000000',
@@ -17,7 +17,7 @@ export const manttoPdfStyles = {
     comments: {
       title: '',
       x: 10,
-      y: 70,
+      y: 150,
       fontSize: 12,
       fontStyle: 'bold',
       color: '#000000',

@@ -84,7 +84,7 @@ const Home = () => {
       >
         <Box>
           <Typography variant="h6" gutterBottom>
-            Link de formulario para Entrada Mudanza Condominio Xiris.
+            Link de formulario para Entrada Mudanza.
           </Typography>
           <Typography>
             Copia el link y mándalo al propietario para que llene el formulario, al final, por favor solicita que te envíen la imagen generada.
@@ -112,7 +112,7 @@ const Home = () => {
         >
         <Box>
           <Typography variant="h6" gutterBottom>
-            Link de formulario aceptación de reglamento Condominio Xiris.
+            Link de formulario aceptación de reglamento.
           </Typography>
           <Typography>
             Copia el link y mándalo al propietario para que llene el formulario, al final, por favor solicita que te envíen el pdf generado.
@@ -139,7 +139,7 @@ const Home = () => {
         >
         <Box>
           <Typography variant="h6" gutterBottom>
-            Link de formulario Solicitud de Tag Playas del conchal.
+            Link de formulario Solicitud de Tag.
           </Typography>
           <Typography>
             Copia el link y mándalo al propietario para que llene el formulario, al final, por favor solicita que te envíen el pdf generado.
@@ -164,23 +164,6 @@ const Home = () => {
           boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)"
         }}
         >
-          <Box>
-            <Typography variant="h6" gutterBottom>
-              Link de formulario Solicitud de Tag Condominio Xiris.
-            </Typography>
-            <Typography>
-              Copia el link y mándalo al propietario para que llene el formulario, al final, por favor solicita que te envíen el pdf generado.
-            </Typography>
-            <Box display="flex" alignItems="center" gap={1} marginTop={1}>
-              <Button 
-                variant="contained" 
-                onClick={() => handleCopy("https://agenciah.github.io/residenza_tag_condominio_xiris/")} 
-                sx={{ backgroundColor: "#26A9E1", color: "#fff" }}
-              >
-                Copiar
-              </Button>
-            </Box>
-          </Box>
         </Container>
         
         
@@ -202,8 +185,7 @@ function App() {
         paddingTop: "40px", // Espacio para el navbar fijo
         position: "relative"
       }}>
-        <img src={residenza_logo} alt="Residenza Logo" style={{ maxWidth: "80px", height: "auto" }} />
-        <img src={logo_xiris_ac} alt="Xiris Logo" style={{ marginRight: "20px", maxWidth: "80px", height: "auto" }} />
+        
       </Box>
 
       <Container sx={{ maxWidth: "1200px", marginTop: "10px" }}>

@@ -5,10 +5,22 @@ import background from "../mantto_assets/reporte de mantenimiento base.jpg";
 import { Button } from '@mui/material';
 
 function Mantto_PDFGeneration({ title, comments, images }) {
+  const getFormattedDate = () => {
+    const meses = [
+      "enero", "febrero", "marzo", "abril", "mayo", "junio",
+      "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+    ];
+    const fecha = new Date();
+    const dia = fecha.getDate();
+    const mes = meses[fecha.getMonth()];
+    const año = fecha.getFullYear();
+    return `Mex, Mex, a ${dia} de ${mes} de ${año}`;
+  };
+
   const handleGeneratePDF = () => {
     const doc = new jsPDF();
 
-    // // Cargar imagen de fondo
+    // Cargar imagen de fondo
     if (background) {
       doc.addImage(
         background,
@@ -21,6 +33,13 @@ function Mantto_PDFGeneration({ title, comments, images }) {
     } else {
       console.error("La imagen de fondo no se ha podido cargar.");
     }
+
+    // Estilo de la fecha
+    doc.setFontSize(10); // Ajusta el tamaño de la fuente según necesites
+    doc.setTextColor('#000000'); // Color de la fecha
+    doc.setFont('helvetica', 'normal'); // Fuente de la fecha
+    doc.text(getFormattedDate(), 136.8, 20); // Posición de la fecha (ajusta x e y según tu diseño)
+
 
     // Estilo del título
     const titleX = manttoPdfStyles.title.x || 10;

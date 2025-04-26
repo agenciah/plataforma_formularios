@@ -1,8 +1,6 @@
 //app
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Container, AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
-import residenza_logo from "./assets/logos/Residenza_logo.jpg";
-import logo_xiris_ac from "./assets/logos/logo_xiris ac.png";
 import Mantto_Main from "./components/reporte_mantto/mantto_main";
 import Checklist_Main from "./components/checklist/checklist_main";
 import Avisos_main from "./components/avisos_xiris/avisos_main";

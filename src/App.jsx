@@ -6,6 +6,7 @@ import Mantto_Main from "./components/reporte_mantto/mantto_main";
 import Checklist_Main from "./components/checklist/checklist_main";
 import Avisos_main from "./components/avisos_xiris/avisos_main";
 
+//Principal
 const NavBar = () => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "rgb(1, 98, 153)", width: "100%" }}>

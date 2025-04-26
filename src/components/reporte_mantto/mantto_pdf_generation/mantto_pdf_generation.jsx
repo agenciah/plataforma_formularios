@@ -1,3 +1,4 @@
+//pdf generator
 import PropTypes from 'prop-types';
 import jsPDF from 'jspdf';
 import { manttoPdfStyles } from './mantto_pdf_styles';

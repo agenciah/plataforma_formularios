@@ -1,4 +1,4 @@
-//form
+//form y mas
 import { useState, useEffect } from 'react';
 import ManttoCommentsSection from './mantto_comment_section';
 import Mantto_PDFGeneration from '../mantto_pdf_generation/mantto_pdf_generation'

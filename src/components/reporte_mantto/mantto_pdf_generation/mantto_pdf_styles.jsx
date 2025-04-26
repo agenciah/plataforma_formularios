@@ -1,4 +1,4 @@
-// pdfStyles.js and positions
+// pdfStyles.js and positions y mas
 export const manttoPdfStyles = {
     title: {
       text: 'Checklist de Supervisión',
